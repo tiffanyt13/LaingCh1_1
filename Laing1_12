@@ -1,0 +1,27 @@
+package com.company;
+
+public class Speed3 {public static void main (String[] args) {
+	double miles = 24;
+	// 1 hour
+	// 40 minutes
+	// 35 seconds
+	//double time = 100.35;
+		double time = 100+35.0/60;
+		double timeInHours = 1.0 + 40.0/60.0 + 35.0/60.0/60.0;
+		//System.out.println("Time in hours: " + timeInHours);
+		// convert miles to kilometers
+		double kilometers = miles * 1.6;
+		// convert time
+		double kmph = time/60;
+		// find average speed
+		double averageSpeed = kilometers / kmph;
+		System.out.println(averageSpeed);
+		double averageSpeedInKPH = kilometers/timeInHours;
+		System.out.println("Average speed in KPH = " + averageSpeedInKPH);
+		
+
+}}
+
+//Output:
+/*22.906379453189732
+Average speed in KPH = 22.906379453189732*/
